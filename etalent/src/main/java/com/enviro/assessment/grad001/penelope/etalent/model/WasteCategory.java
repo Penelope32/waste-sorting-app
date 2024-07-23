@@ -17,4 +17,20 @@ public class WasteCategory {
     @NotNull
     @Size(min = 2, max = 100)
     private String name;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public @NotNull @Size(min = 2, max = 100) String getName() {
+        return name;
+    }
+
+    public void setName(@NotNull @Size(min = 2, max = 100) String name) {
+        this.name = name;
+    }
 }

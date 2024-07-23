@@ -17,4 +17,20 @@ public class RecyclingTip {
     private String tip;
 
     // Getters and Setters
+
+    public @NotNull @Size(min = 2, max = 500) String getTip() {
+        return tip;
+    }
+
+    public void setTip(@NotNull @Size(min = 2, max = 500) String tip) {
+        this.tip = tip;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
